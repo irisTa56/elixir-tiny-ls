@@ -25,3 +25,5 @@ None for now...
 
 - 0.0.1
   - initial release
+- 0.1.0
+  - injecting to the existing Elixir syntax rather than defining a new language

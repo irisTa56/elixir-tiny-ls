@@ -1,17 +1,7 @@
 {
-  "comment": "Syntax Parser for Elixir using Croma.",
-  "fileTypes": [
-    "ex",
-    "exs"
-  ],
-  "firstLineMatch": "^#!/.*\\belixir",
-  "foldingStartMarker": "(after|else|catch|rescue|\\-\\>|\\{|\\[|do)\\s*$",
-  "foldingStopMarker": "^\\s*((\\}|\\]|after|else|catch|rescue)\\s*$|end\\b)",
-  "name": "Elixir-Croma",
+  "scopeName": "source.elixir-croma",
+  "injectionSelector": "L:source.elixir",
   "patterns": [
-    {
-      "include": "source.elixir"
-    },
     {
       "comment": "Function (Croma) with parameters",
       "begin": "\\b(defun(p|pt)?)\\b\\s*([_$a-z][$\\w]*[!?]?)\\s*\\(",
@@ -51,6 +41,5 @@
         }
       }
     }
-  ],
-  "scopeName": "source.elixir-croma"
+  ]
 }

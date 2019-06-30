@@ -1,5 +1,5 @@
 {
-  "fileTypes": [],
+  "scopeName": "markdown.elixir.codeblock",
   "injectionSelector": "L:text.html.markdown",
   "patterns": [
     {
@@ -34,12 +34,14 @@
           "contentName": "meta.embedded.block.elixir",
           "patterns": [
             {
+              "include": "source.elixir"
+            },
+            {
               "include": "source.elixir-croma"
             }
           ]
         }
       ]
     }
-  },
-  "scopeName": "markdown.elixir.codeblock"
+  }
 }
