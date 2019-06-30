@@ -1,0 +1,48 @@
+{
+  "name": "elixir-tiny-ls",
+  "displayName": "ElixirTinyLS",
+  "description": "Additional Elixir language support for markdown code block and Croma",
+	"license": "MIT",
+	"version": "0.0.1",
+	"publisher": "irisTa56",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/irisTa56/elixir-tiny-ls.git"
+	},
+  "engines": {
+    "vscode": "^1.35.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "elixir-croma",
+        "aliases": ["Elixir-Croma", "elixir-croma"],
+        "extensions": [".ex", ".exs"],
+        "configuration": "./elixir-croma.configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "elixir-croma",
+        "scopeName": "source.elixir-croma",
+        "path": "./syntaxes/elixir-croma.json"
+      },
+      {
+        "scopeName": "markdown.elixir.codeblock",
+        "path": "./syntaxes/codeblock.json",
+        "injectTo": [
+          "text.html.markdown"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.block.elixir": "elixir"
+        }
+      }
+    ]
+  },
+  "extensionDependencies": [
+    "mjmcloug.vscode-elixir"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "comment": "Syntax Parser for Elixir using Croma.",
+  "fileTypes": [
+    "ex",
+    "exs"
+  ],
+  "firstLineMatch": "^#!/.*\\belixir",
+  "foldingStartMarker": "(after|else|catch|rescue|\\-\\>|\\{|\\[|do)\\s*$",
+  "foldingStopMarker": "^\\s*((\\}|\\]|after|else|catch|rescue)\\s*$|end\\b)",
+  "name": "Elixir-Croma",
+  "patterns": [
+    {
+      "include": "source.elixir"
+    },
+    {
+      "comment": "Function (Croma) with parameters",
+      "begin": "\\b(defun(p|pt)?)\\b\\s*([_$a-z][$\\w]*[!?]?)\\s*\\(",
+      "beginCaptures": {
+        "1": {
+          "name": "keyword.control.elixir"
+        },
+        "2": {
+          "name": "keyword.control.elixir"
+        },
+        "3": {
+          "name": "entity.name.function.elixir"
+        }
+      },
+      "end": "\\)",
+      "patterns": [
+        {
+          "include": "$self"
+        },
+        {
+          "include": "#function_parameter"
+        }
+      ]
+    },
+    {
+      "comment": "Function (Croma) without parameters",
+      "match": "\\b(defun(p|pt)?)\\b\\s*([_$a-z][$\\w]*[!?]?)",
+      "captures": {
+        "1": {
+          "name": "keyword.control.elixir"
+        },
+        "2": {
+          "name": "keyword.control.elixir"
+        },
+        "3": {
+          "name": "entity.name.function.elixir"
+        }
+      }
+    }
+  ],
+  "scopeName": "source.elixir-croma"
+}
