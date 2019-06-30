@@ -1,6 +1,6 @@
 # ElixirTinyLS
 
-Additional Elixir language support for markdown code block and Croma
+ElixirTinyLS is a VS Code extension providing additional Elixir language support 1) syntax highlighting in markdown code block and 2) highlight some Croma's macros.
 
 ## Features
 
