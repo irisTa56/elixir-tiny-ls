@@ -19,10 +19,7 @@
       "end": "\\)",
       "patterns": [
         {
-          "include": "$self"
-        },
-        {
-          "include": "#function_parameter"
+          "include": "source.elixir"
         }
       ]
     },

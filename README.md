@@ -27,3 +27,5 @@ None for now...
   - initial release
 - 0.1.0
   - injecting to the existing Elixir syntax rather than defining a new language
+- 0.1.1
+  - fix colorless arguments
