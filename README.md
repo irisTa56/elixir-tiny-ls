@@ -29,3 +29,5 @@ None for now...
   - injecting to the existing Elixir syntax rather than defining a new language
 - 0.1.1
   - fix colorless arguments
+- 0.1.2
+  - highlight `defpt` macro of Croma as the same with a native function.

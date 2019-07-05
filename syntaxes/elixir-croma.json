@@ -25,7 +25,7 @@
     },
     {
       "comment": "Function (Croma) without parameters",
-      "match": "\\b(defun(p|pt)?)\\b\\s*([_$a-z][$\\w]*[!?]?)",
+      "match": "\\b(defpt|defun(p|pt)?)\\b\\s*([_$a-z][$\\w]*[!?]?)",
       "captures": {
         "1": {
           "name": "keyword.control.elixir"
