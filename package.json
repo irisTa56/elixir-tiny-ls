@@ -3,7 +3,7 @@
   "displayName": "ElixirTinyLS",
   "description": "Additional Elixir language support for markdown code block and Croma",
 	"license": "MIT",
-	"version": "0.1.2",
+	"version": "0.2.0",
 	"publisher": "irisTa56",
 	"repository": {
 		"type": "git",
@@ -35,8 +35,5 @@
         }
       }
     ]
-  },
-  "extensionDependencies": [
-    "mjmcloug.vscode-elixir"
-  ]
+  }
 }
