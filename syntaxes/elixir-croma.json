@@ -1,6 +1,6 @@
 {
   "scopeName": "source.elixir-croma",
-  "injectionSelector": "L:source.elixir",
+  "injectionSelector": "L:source.elixir -comment",
   "patterns": [
     {
       "comment": "Function (Croma) with parameters",

@@ -39,3 +39,5 @@ None for now...
     - highlight `defpt` macro of Croma as the same with a native function
 - 0.2.0
     - remove an extension dependency (another Elixir language extension still required)
+- 0.2.1
+    - do not highlight Croma's control keywords in comments
